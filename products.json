@@ -1,0 +1,68 @@
+{
+    "items": [
+        {
+            "sys": {"id": 1},
+            "fields": {
+                "title": "Python Programming Mastercourse",
+                "price": 123.99,
+                "image": {"fields": {"file": {"url": "./images/python.png"}}}
+            }
+        },
+        {
+            "sys": {"id": 2},
+            "fields": {
+                "title": "Java Programming Mastercourse",
+                "price": 149.99,
+                "image": {"fields": {"file": {"url": "./images/java.png"}}}
+            }
+        },
+        {
+            "sys": {"id": 3},
+            "fields": {
+                "title": "C++ Mastercourse",
+                "price": 110.99,
+                "image": {"fields": {"file": {"url": "./images/c++.png"}}}
+            }
+        },
+        {
+            "sys": {"id": 4},
+            "fields": {
+                "title": "Web Development for Beginners",
+                "price": 99.99,
+                "image": {"fields": {"file": {"url": "./images/web d for beginners.jpg"}}}
+            }
+        },
+        {
+            "sys": {"id": 5},
+            "fields": {
+                "title": "Digital Marketing Full Course",
+                "price": 109.99,
+                "image": {"fields": {"file": {"url": "./images/digital marketing.jpg"}}}
+            }
+        },
+        {
+            "sys": {"id": 6},
+            "fields": {
+                "title": "Advanced Web Development Course",
+                "price": 129.99,
+                "image": {"fields": {"file": {"url": "./images/adv web d.jpg"}}}
+            }
+        },
+        {
+            "sys": {"id": 7},
+            "fields": {
+                "title": "Data Structures and Algorithms Full Course",
+                "price": 139.99,
+                "image": {"fields": {"file": {"url": "./images/dsa.jpg"}}}
+            }
+        },
+        {
+            "sys": {"id": 8},
+            "fields": {
+                "title": "JavaScript Mastercourse",
+                "price": 149.99,
+                "image": {"fields": {"file": {"url": "./images/JS.png"}}}
+            }
+        }
+    ]
+}
