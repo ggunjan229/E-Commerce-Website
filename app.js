@@ -280,3 +280,8 @@ function proceedToCheckout() {
       // window.location.href = "checkout.html";
   }
 }
+
+function toggleMenu() {
+  const nav = document.querySelector(".list");
+  nav.classList.toggle("active");
+}

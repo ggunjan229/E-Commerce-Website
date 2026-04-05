@@ -15,7 +15,8 @@ ul{
 }
 
 body {
-    padding-top: 80px;
+    padding-top: 70px;
+    font-size: 20px;
 }
 
 .nav-bar{
@@ -29,28 +30,38 @@ body {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 0 40px;
 }
-.logo{
-    padding-left: 2em;
-}
-.logo-text{
-    font-size: 2em;
-    
-}
-.menubar{
-    width: 45%;
-    margin-left: 8.5em;
-}
-.list{
+
+.list {
     display: flex;
+    gap: 150px;
     justify-content: space-between;
+    font-size: 80px;
 }
+
 .list-items a{
     color: black;
     font-family: sans-serif;
     font-size: 0.9em;
     transition: 0.4s;
+    font-size: 2.2em;
 }
+
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+.logo{
+    padding-left: 2em;
+}
+.logo-text{
+    font-size: 2.2em;
+    
+}
+
+
 .list-items a:hover{
     color: black;
 }
@@ -242,6 +253,29 @@ cart h{
 .none{
     display: none;
 }
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: white;
+        width: 220px;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .list.active {
+        display: flex;
+    }
+}
 @media screen and (max-width: 768px){
     .logo{
         padding-left: 0;
@@ -249,9 +283,7 @@ cart h{
     .cart{
         padding-right: 2em;
     }
-    .menubar{
-        display: none;
-    }
+    
     .burger{
         margin-left: 2em;
         display: block;
@@ -266,43 +298,7 @@ cart h{
     .section2 .title h1{
         font-size: 1.5em;
     }
-    .menu-sidebar{
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        background: #ececec;
-        z-index: 11;
-        overflow: hidden;
-        transition: 0.3s linear;
-        transform: translateX(-100%);
-    }
-    .menu-menubar{
-        display: flex;
-        height: 80%;
-        justify-content: center;
-
-    }
-    .menu-list{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .menu-sidebar .close-menu{
-        font-size: 1.4em;
-        position: absolute;
-        right: 30px;
-    }
-    .menu-list-items a{
-        color: #f09d51;
-    }
-    .menu-list-items a:hover{
-        color: #f57b09;
-    }
+    
 }
 
 @media screen and (max-width:480px) {
