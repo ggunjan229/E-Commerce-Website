@@ -15,7 +15,8 @@
             <div class="layer3"></div>
         </div>
         <div class="logo">
-            <span class="logo-text"><i class="fa fa-book" style="margin-right: 0.1em"></i>Comfort<span style="color: #f09d51;font-size: 1.1em;">Learning</span>
+            <span class="logo-text"><i class="fa fa-book" style="margin-right: 0.1em">
+            </i>Comfort<span style="color: #f09d51;font-size: 1.1em;">Learning</span>
         </div>
         <div class="menubar">
             <ul class="list">
@@ -40,48 +41,114 @@
 
     <section class="section2" id="products">
         <div class="title">
-            <h1>COURSES WE OFFER!!</h1>
+            <h1 class="section-title">COURSES WE OFFER!!</h1>
         </div>
         <div class="product">
 
         </div>
     </section>
     <section id="pricing" class="section3">
-        <h1>PRICING PLANS</h1>
-        <div class="pricing-container">
-    
-            <div class="price-card">
-                <h2>Basic</h2>
-                <h3>$99</h3>
-                <p>Access to 3 courses</p>
+
+        <div class="container-box">
+          <h1 class="section-title">Our Pricing Plans</h1>
+          <p class="pricing-subtitle">
+            Choose a plan that fits your learning needs. Flexible, affordable, and designed for every student.
+          </p>
+      
+          <div class="pricing-cards">
+      
+            <!-- BASIC PLAN -->
+            <div class="card">
+              <h2>Basic</h2>
+              <h3>₹499/month</h3>
+              <ul>
+                <li>Access to basic courses</li>
+                <li>Limited study material</li>
+                <li>Community support</li>
+                <li>Weekly updates</li>
+              </ul>
+              <button onclick="addToCart('Basic Plan')">Buy Now</button>
             </div>
-    
-            <div class="price-card">
-                <h2>Standard</h2>
-                <h3>$199</h3>
-                <p>Access to 6 courses</p>
+      
+            <!-- STANDARD PLAN -->
+            <div class="card popular">
+              <h2>Standard</h2>
+              <h3>₹999/month</h3>
+              <ul>
+                <li>All basic features</li>
+                <li>Premium courses access</li>
+                <li>Downloadable resources</li>
+                <li>Doubt support</li>
+              </ul>
+              <button onclick="addToCart('Standard Plan')">Buy Now</button>
             </div>
-    
-            <div class="price-card">
-                <h2>Premium</h2>
-                <h3>$299</h3>
-                <p>All courses access</p>
+      
+            <!-- PREMIUM PLAN -->
+            <div class="card">
+              <h2>Premium</h2>
+              <h3>₹1499/month</h3>
+              <ul>
+                <li>All courses unlocked</li>
+                <li>1-on-1 mentorship</li>
+                <li>Live sessions</li>
+                <li>Placement guidance</li>
+              </ul>
+              <button onclick="addToCart('Premium Plan')">Buy Now</button>
             </div>
-    
+      
+          </div>
         </div>
-    </section>
-    <section id="about" class="section4">
-        <h1>ABOUT US</h1>
-        <p>
-            Comfort Learning is an innovative e-commerce-based educational platform designed to make learning simple, accessible, and effective for everyone. Our goal is to provide high-quality online courses in fields such as programming, web development, and emerging technologies, all in one place.</p>
+      </section>
+      <p style="text-align:center; margin-top:20px;">
+        🔒 Secure Payment | 💳 Multiple Payment Options | 📞 24/7 Support
+      </p>
+      <section id="about" class="about-section">
 
-<p>We believe that education should be easy to access and easy to understand. That’s why our platform is built with a clean and user-friendly interface, allowing learners to explore courses, compare options, and enroll without any confusion. Whether you are a beginner starting your journey or a professional looking to upgrade your skills, Comfort Learning offers courses tailored to your needs.</p>
-
-<p>Our mission is to empower learners by providing structured and affordable learning solutions. We focus on delivering value through well-organized content and a seamless user experience.</p>
-
-<p>At Comfort Learning, we are committed to helping individuals grow, learn, and succeed in their careers by bridging the gap between knowledge and practical skills.
-        </p>
-    </section>
+        <div class="container-box">
+      
+          <h1 class="section-title">About Us</h1>
+      
+          <p class="about-intro">
+            Comfort Learning is an innovative e-learning platform designed to make education simple, accessible, and effective for everyone. We provide high-quality courses in programming, development, and emerging technologies — all in one place.
+          </p>
+      
+          <div class="about-grid">
+      
+            <div class="about-card">
+              <i class="fas fa-bullseye"></i>
+              <h3>Our Mission</h3>
+              <p>
+                To empower learners with structured and affordable education that builds real-world skills.
+              </p>
+            </div>
+      
+            <div class="about-card">
+              <i class="fas fa-eye"></i>
+              <h3>Our Vision</h3>
+              <p>
+                To become a trusted global platform where anyone can learn and grow without barriers.
+              </p>
+            </div>
+      
+            <div class="about-card">
+              <i class="fas fa-users"></i>
+              <h3>Who We Help</h3>
+              <p>
+                Students, beginners, and professionals looking to upgrade their careers and skills.
+              </p>
+            </div>
+      
+          </div>
+      
+          <div class="about-highlight">
+            <p>
+              🚀 At Comfort Learning, we bridge the gap between knowledge and practical skills through engaging content, expert guidance, and a seamless learning experience.
+            </p>
+          </div>
+      
+        </div>
+      
+      </section>
     <div class="cart-sidebar">
         <div class="cart">
             <span class="close-cart">
@@ -97,7 +164,7 @@
             <button class="btn clear-cart btn">Clear Cart</button>
         </div>
         <div class="clear-cart">
-        <button class="btn clear-cart btn">Proceed</button>
+        <button class="btn clear-cart btn" onclick="proceedToCheckout()">Proceed</button>
         </div>
     </div>
     <div class="menu-sidebar">

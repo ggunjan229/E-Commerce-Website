@@ -263,3 +263,20 @@ document.querySelectorAll('.list-items').forEach(link => {
     });
   });
 });
+
+
+function addToCart(plan) {
+    cart.push(plan);
+    alert(plan + " added to cart");
+}
+
+function proceedToCheckout() {
+  if (cart.length === 0) {
+      alert("Your cart is empty!");
+  } else {
+      alert("Proceeding with: " + cart.join(", "));
+      
+      // You can redirect if needed
+      // window.location.href = "checkout.html";
+  }
+}
